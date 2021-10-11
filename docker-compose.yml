@@ -6,4 +6,4 @@ services: # "Services" are in the end the Containers that your app needs
       context: .
       dockerfile: Dockerfile
     volumes: # Define any required volumes / bind mounts
-      - $(pwd)/test_run.py:/app
+      - ./test_run.py:/app/test_run.py

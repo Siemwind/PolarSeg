@@ -1,3 +1,4 @@
 import os
 
-os.system('python3 --version')
+print(os.system('python3 --version'))
+print("/nVersion succeeded!")
