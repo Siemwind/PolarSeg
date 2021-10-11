@@ -1,0 +1,9 @@
+ 
+version: "3.8" # version of the Docker Compose spec which is being used
+services: # "Services" are in the end the Containers that your app needs
+  python_version_test:
+    build: # Define the path to your Dockerfile for the image of this container
+      context: .
+      dockerfile: Dockerfile
+    volumes: # Define any required volumes / bind mounts
+      - $(pwd)/test_run.py:/app
